@@ -6,18 +6,18 @@ By: Alan Contreras A14626630
 >to interact with the real world
 
 >Q. What is the frequency of the blink rate in this example? Note that
->frequency is the inverse of the time it takes for a cycle. A cycle is the
->time it takes to go HIGH to LOW to HIGH again. Record a video of your
->ESP32 blinking. 
+>frequency is the inverse of the time it takes for a cycle. A cycle is 
+>the time it takes to go HIGH to LOW to HIGH again. Record a video of 
+>your ESP32 blinking. 
 
 >A. The frequency the led is blinking is 0.667Hz. 
 
->![blink](Captures/Lab2/digitalWrite.GIF)
+>![blink](Captures/Lab2/digitalWrite.gif)
 
 ### Digital Read
->In the previous tutorial, I used digitalWrite function to use the GPIO pin
->as an output. In this tutorial, the pin is used as an input through the
->digitalRead function.
+>In the previous tutorial, I used digitalWrite function to use the GPIO 
+>pin as an output. In this tutorial, the pin is used as an input through 
+>the digitalRead function.
 
 >Q. Why do we need a pull-up resistor? Describe the behavior without it.
 
@@ -27,11 +27,11 @@ By: Alan Contreras A14626630
 >system, the MCU actually disconnects each time I press the button,
 >rather than turning on the LED. 
 
->![button](Captures/Lab2/digitalRead.GIF)
+![button](Captures/Lab2/digitalRead.gif)
 
 ### LED
->In this tutorial, implement what I learned from previous tutorials to make
->an LED light up using the MCU. 
+>In this tutorial, implement what I learned from previous tutorials to 
+>make an LED light up using the MCU. 
 
 >Q. Which GPIO pin did you have to use according to the above setup?
 
@@ -41,78 +41,98 @@ By: Alan Contreras A14626630
 
 >A. The expected current draw is 5mA.
 
->Q. What is the current limit for the GPIO? You can find this on the ESP32_WROOM datasheet: 
+>Q. What is the current limit for the GPIO? You can find this on the
+>ESP32_WROOM datasheet: 
 
 >A. The current limit is 1.1 A.     
 
 ### Serial Write
 
->In this tutorial, I am introduced to communication with the MCU using text.
->Through the serial communication channel, communication is accomplished. 
+>In this tutorial, I am introduced to communication with the MCU using 
+>text. Through the serial communication channel, communication is 
+>accomplished. 
 
 >Q. In your report, run the above code at Baud Rate of 9600. How many 
->seconds are between each Hello World? What did you expect the time between 
->each print statement to be and what did you actually get? 
+>seconds are between each Hello World? What did you expect the time 
+>between each print statement to be and what did you actually get? 
 
->A. The time in between each "Hello World" is measured in miliseconds but this delay is not the 1ms 
->delay that wsa assigned in our code. The expected time between each statement, I thought would be 1ms 
->but instead I got a variation of 5ms to 30ms.
+>A. The time in between each "Hello World" is measured in miliseconds 
+>but this delay is not the 1ms delay that wsa assigned in our code. The 
+>expected time between each statement, I thought would be 1ms but 
+>instead I got a variation of 5ms to 30ms.
 
->Q. How does this change when you change the baud rate to 2400, 4800, and 115200. (When you change the 
->baud rate, you’ll also need to change the Serial Monitor’s Baud Rate. The answer to this question 
->should be quantitative and not just qualitative. Keep in mind that baud rate refers to how many bits 
->per second are sent and that an ASCII character is 8 bits.
+>Q. How does this change when you change the baud rate to 2400, 4800, 
+>and 115200. (When you change the baud rate, you’ll also need to change 
+>the Serial Monitor’s Baud Rate. The answer to this question 
+>should be quantitative and not just qualitative. Keep in mind that baud
+>rate refers to how many bits per second are sent and that an ASCII 
+>character is 8 bits.
 
->A. When the baud rate changes to 2400, the serial monitor prints out "Hello World!!!" at a slower
->speed, i.e. the delay is in the range of 50ms to 70ms. For 4800, the delay is sightly faster-- it 
->ranges from 30ms to 50ms. For 115200, the serial monitor does not even print out a delay-- I believe it 
->is going so fast that the monitor simply keeps printing out the statement.
+>A. When the baud rate changes to 2400, the serial monitor prints out
+>"Hello World!!!" at a slower speed, i.e. the delay is in the range of 
+>50ms to 70ms. For 4800, the delay is sightly faster-- it ranges from 
+>30ms to 50ms. For 115200, the serial monitor does not even print out a 
+>delay-- I believe it is going so fast that the monitor simply keeps 
+>printing out the statement.
+
 >![Hellowo](Captures/Lab2/hellowo.JPG)
 
 ### Challenge 1 - LED Blink Frequency
 
->In this challenge, I made use of what learned in the previous tutorials into writing code so that the 
->MCU may blink the different LEDs off and on.
+>In this challenge, I made use of what learned in the previous tutorials 
+>into writing code so that the MCU may blink the different LEDs off and 
+>on.
 
 >Q. What are the resistor values you chose for each of the LEDs?
+
 >A. I used the 220 Ohm resistor for all of the LEDs
 
->Q. Videos showing each condition (please record in landscape-horizontal mode)
+>Q. Videos showing each condition (please record in landscape-horizontal 
+>mode)
 
 >A.
 >Condition 1:
->![cond1](Captures/Lab2/cond1.GIF)
+![cond1](Captures/Lab2/cond1.gif)
+
 >Condition 2:
 >It is difficult to see the blinking due to the conversion rates from 
 >video to gif, but it was blinking in my video.
->![cond2](Captures/Lab2/cond2.GIF)
->Condition 3:
->![cond3](Captures/Lab2/cond3.GIF)
->Condition 4:
->![cond4](Captures/Lab2/cond4.GIF)
->Condition 5:
->![cond5](Captures/Lab2/cond5.GIF)
->Condition 6:
->![cond6](Captures/Lab2/cond6.GIF)
->
-### Challenge 2: Timer - Part 1
->In this challenge, I am tasked with making a timer that runs when a button is pressed. Using the serial 
->monitor and the button tutorial tips, this task is accomplished.
+![cond2](Captures/Lab2/cond2.gif)
 
->Q. What is the average time elapsed for each second iteration? Use millis() to help you with this task. 
->Describe how you measured this.
+>Condition 3:
+![cond3](Captures/Lab2/cond3.gif)
+
+>Condition 4:
+![cond4](Captures/Lab2/cond4.gif)
+
+>Condition 5:
+![cond5](Captures/Lab2/cond5.gif)
+
+>Condition 6:
+![cond6](Captures/Lab2/cond6.gif)
+
+### Challenge 2: Timer - Part 1
+>In this challenge, I am tasked with making a timer that runs when a 
+>button is pressed. Using the serial monitor and the button tutorial 
+>tips, this task is accomplished.
+
+>Q. What is the average time elapsed for each second iteration? Use 
+>millis() to help you with this task. Describe how you measured this.
 
 >A. The average time elipsed for each second iteration, according to the 
 >millis() function was 1 sec. I got this result by placing one millis() 
 >marker in the beginning of the >Lab2 Timer Loop, and then taking the 
->difference of that millis() withanother millis() marker at the end of the
->Lab2Timer Loop (see images)
+>difference of that millis() withanother millis() marker at the end of 
+>the Lab2Timer Loop (see images)
+
 >![Lab2Chloop](Captures/Lab2/lab2ch2.JPG)
+
 >![Lab2Ch2Serial](Captures/Lab2/lab2ch2_2.JPG)
 
 ### Challenge 3: Timer - Part 2
->In this challenge, a run down timer is added so that when the button is released, the serial monitor 
->counts down from where the timer was left when the button was last pressed. 
+>In this challenge, a run down timer is added so that when the button is 
+>released, the serial monitor counts down from where the timer was left 
+>when the button was last pressed. 
 
 >Q. Describe in plain english the logic of your entire program. 
 
@@ -132,19 +152,23 @@ By: Alan Contreras A14626630
 >runs a while loop that decreases timer_seconds by one second and prints 
 >out each second in the serial monitor until the value in timer_seconds 
 >is 0 or until the button is pressed again. 
+
 >![Lab2Ch3Serial](Captures/Lab2/lab2ch3.JPG)
+
 >![Lab2Ch3Code](Captures/Lab2/lab2ch3_2.JPG)
 
 ### Accelerometer
 >In this tutorial, I am introduced to accelerometer, how it operates 
 >and, how it communicates through the MCU and with the computer.
 
->Q. How many bits is your ADC? Try connecting your A0 pin to 3.3 V. How did you calculate the bits?
+>Q. How many bits is your ADC? Try connecting your A0 pin to 3.3 V. How 
+>did you calculate the bits?
 
 >A. The ADC has 12 bit precision. This was found out by connecting the 
 >A0 pin to 3.3 V and seeing that the serial plotter was plotting 4095. 
 >4095 is simply the output code of the ADC, that could be represented in 
 >bits, so I added 4095+1 =4096 and took the logBASE2(4096)= 12. 
+
 >![Lab2XLRO](Captures/Lab2/xlrO.JPG)
 
 >Q. What is the resting value of the accelerometer when it is lying face 
@@ -157,6 +181,7 @@ By: Alan Contreras A14626630
 >Hence, 2320 is the neutral, 0 spot of this graph. In terms of volts, 
 >2320 is most closely represented by 1.83 V. The Least Siginificant Bit 
 >is approximately 0.805 mV. So (0.805mV)*(2290)= 1.83 V
+
 >![Lab2XLRO1](Captures/Lab2/xlrO1.JPG)
 
 >Q. Tap the accelerometer with light, medium, and hard force. What is 
@@ -172,7 +197,9 @@ By: Alan Contreras A14626630
 >dividing that sum by the number of minimum peaks. 
 
 >![Lab2XLRO2](Captures/Lab2/lightTap.JPG)
+
 >![Lab2XLRO3](Captures/Lab2/medTap.JPG)
+
 >![Lab2XLRO4](Captures/Lab2/hardTap.JPG)
 
 ### Pulse Width Modulation
@@ -199,8 +226,9 @@ By: Alan Contreras A14626630
 
 >A. The mistakes where some mistakes in syntax, like some variables were 
 >not copied correctly, and some semicolons were omitted. Also, 
->ledcAttachPin was called the main loop when it should have been ledcWrite. 
-![PWM](Captures/Lab2/PWM.GIF)
+>ledcAttachPin was called the main loop when it should have been 
+>ledcWrite. 
+![PWM](Captures/Lab2/PWM.gif)
 ### OLED
 >In this section, I am introduced to I2C communication and how the MCU 
 >can the OLED display as a manner of communication with the real world 
@@ -213,7 +241,9 @@ By: Alan Contreras A14626630
 >a function missing a semicolon, there were variable calls that were not 
 >called approrpiately and there wasa function that was also not called 
 >correctly.
-![OLED](Captures/Lab2/IMG_0222.JPG)
+
+>![OLED](Captures/Lab2/IMG_0222.JPG)
+
 ### Serial Read
 >In this tutorial section, I am taught how we can communicate with the 
 >MCU with the serial monitor using serial read, and I am taught how we 
@@ -249,7 +279,7 @@ By: Alan Contreras A14626630
 >either buzz fully or not at all. However, ledcWrite can vary among 
 >ranges in between full buzz or no buzz and thats why we can accomplish 
 >the variation that was tasked in this challenge. 
->![moto](Captures/Lab2/moto.GIF)
+![moto](Captures/Lab2/moto.gif)
 
 ### Challenge 5 Gesture Detection
 >In this challenge, I begin coding for a tap detection counter on the 
@@ -284,7 +314,8 @@ By: Alan Contreras A14626630
 >Q. Include a video of you tapping on the accelerometer and the OLED 
 >counting each time.
 
->A. ![count_up](Captures/Lab2/count_up.GIF)
+>A. 
+![count_up](Captures/Lab2/count_up.gif)
 
 ### Challenge 6 - Read and Write to OLED
 >For this challenge I am tasked with using what I learned form the Serial
@@ -294,7 +325,7 @@ By: Alan Contreras A14626630
 >Q. Video of a message typed into the serial monitor and appearing on 
 >the OLED. This video should be shot WITHOUT moving the camera. 
 
->A. ![hello](Captures/Lab2/OLEDw.GIF)
+A. ![hello](Captures/Lab2/OLEDw.gif)
 
 >Q. What happens if you write a really long message? Why?
 
@@ -331,7 +362,8 @@ By: Alan Contreras A14626630
 >code and add timing functions to it. 
 
 >![ch7-i](Captures/Lab2/ch7.JPG)
->![ch7](Captures/Lab2/ch7.GIF)
+
+![ch7](Captures/Lab2/ch7.gif)
 
 ### Challenge 8 State Machine of Watch 
 >This challenge is mostly about taking a step back to asses and 
@@ -365,4 +397,5 @@ By: Alan Contreras A14626630
 >state machine I drew up in challenge 8. This final challenge 
 >demonstrates all that I have learned so far into a real life 
 >application.
->![LastWoot](Captures/Lab2/final.GIF)
+
+![LastWoot](Captures/Lab2/final.gif)
