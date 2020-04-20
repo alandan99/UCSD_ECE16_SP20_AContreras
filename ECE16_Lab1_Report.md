@@ -1,20 +1,20 @@
 # ECE16 Lab1 Report
-By: Alan COntreras A14626630
+By: Alan Contreras A14626630
 
 >Q. When you open the conflicted readme, what did you get? How did you fix it?
 
 >A. The conflict I got was that updates were changes made remotely that
 >I did not have locally. So I need to do a pull before pushin any new
 >information out. I did this and the conflict was resolved.
-![Fixed Push](Captures/FixMe_Pull.jpg)
-![Fixed Push_2](Captures/FixMe_Pull2.jpg)
+![Fixed Push](Captures/LAB1/FixMe_Pull.jpg)
+![Fixed Push_2](Captures/LAB1/FixMe_Pull2.jpg)
 ### Challenge 1:
 
 >The objective for Challenge 1 is to clone my repository to my local
 >machine. Using what I learned in the Lab Tutorial, I was able to clone
 >the repository I created into my computer.
-![Cloned Repo](Captures/New_repo.jpg)
-![Cloned Repo_2](Captures/ezgif.com-crop.gif)
+![Cloned Repo](Captures/LAB1/New_repo.jpg)
+![Cloned Repo_2](Captures/LAB1/ezgif.com-crop.gif)
 
 ### Python Basics tutorial
 
@@ -24,7 +24,7 @@ By: Alan COntreras A14626630
 
 >A. I set the variable a to have the string "Hello World!!!" and I set 
 >b, c, d accordingly using the slice operation on a. 
-![Tutorial](Captures/PBT1.jpg)
+![Tutorial](Captures/LAB1/PBT1.jpg)
 
 >Q. In the following code, what is the output of the print statement? Why doesn’t original_list = ['hi','how','are','you']?
 
@@ -36,8 +36,8 @@ By: Alan COntreras A14626630
 >updated, you'll get the desired list. 
 
 
-![Tutorial_2](Captures/PBT2.jpg)
-![Tutorial_3](Captures/PBT2_2.jpg)
+![Tutorial_2](Captures/LAB1/PBT2.jpg)
+![Tutorial_3](Captures/LAB1/PBT2_2.jpg)
 
 ### Challenge 2
 >The objective of this challenge is to familiarize ourselves with Numpy,
@@ -53,35 +53,35 @@ By: Alan COntreras A14626630
 >A. The resulting list is the result of each of the elements in the given
 >list being subtracted by 20. The shape of the array is a row array with
 >4 elements. 
-![cha2_q1](Captures/ch2_q1.png)
+![cha2_q1](Captures/LAB1/ch2_q1.png)
 
 >Q. Show the code: Make a 2D array of test_2D_array from [0,10,4,12],[1,20,3,41]
 
 >A. The attached image shows my code:
-![cha2_q2](Captures/ch2_q2.png)
+![cha2_q2](Captures/LAB1/ch2_q2.png)
 
 >Q. Make a 2D array of zeros with shape of 10x20 and then print it out
 
 >A. The attached image shows my result:
-![cha2_q3](Captures/ch2_q3.png)
+![cha2_q3](Captures/LAB1/ch2_q3.png)
 
 
 >Q. Show the code: Out of the test_array, create the following using hstack and vstack: 
 
 >A. The attached image shows my result:
-![cha2_q4](Captures/ch2_q4.png)
+![cha2_q4](Captures/LAB1/ch2_q4.png)
 
 
 >Q.Show the code: Using arange, make an array called arange_array1 to equal [-3, 3,9,15] and arange_array2 to equal [ -7,  -9, -11, -13, -15, -17, -19]
 
 >A. The attached image shows my result:
-![cha2_q5](Captures/ch2_q5.png)
+![cha2_q5](Captures/LAB1/ch2_q5.png)
 
 
 >Q.Make an array called linspace_array using linspace that goes from 0 to 100 with 49 steps. 
 
 >A.The attached image shows my result:
-![cha2_q6](Captures/ch2_q6.png)
+![cha2_q6](Captures/LAB1/ch2_q6.png)
 
 
 >Q.How do linspace and arange differ? When might you use one over the other?
@@ -101,19 +101,19 @@ By: Alan COntreras A14626630
 >A.Following the tutorial on array slicing and indexing, I was able to 
 >come up with the array that would satsify the desired results. 
 >The attached images show my process and results:
-![cha2_q7](Captures/ch2qslice.jpg)
+![cha2_q7](Captures/LAB1/ch2qslice.jpg)
 >The attached image shows my result:
-![cha2_q7](Captures/ch2_q7.png)
+![cha2_q7](Captures/LAB1/ch2_q7.png)
 
 
 >Q. Show your code: Now solve the problem from the section Indexing and
 >slicing using numpy and array assignment.
 
 >A. The attached image shows my result:
->![cha2_q8](Captures/ch2_q8.png)
+>![cha2_q8](Captures/LAB1/ch2_q8.png)
 
 
 >Q. Using fromstring, vstack, and a for loop, create an array of 100x4 from s: [[1,2,3,4],[1,2,3,4],[1,2,3,4]…..[1,2,3,4]]. 
 
 >A. The attached image shows my result:
->![cha2_q9](Captures/ch2_q9.png)
+>![cha2_q9](Captures/LAB1/ch2_q9.png)
