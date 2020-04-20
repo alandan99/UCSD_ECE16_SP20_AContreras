@@ -12,7 +12,7 @@ By: Alan Contreras A14626630
 
 >A. The frequency the led is blinking is 0.667Hz. 
 
->![blink](Captures/Lab2/digitalWrite.GIF)
+>![blink](Captures/Lab2/digitalWrite.gif)
 
 ### Digital Read
 >In the previous tutorial, I used digitalWrite function to use the GPIO pin
